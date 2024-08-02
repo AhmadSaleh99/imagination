@@ -1,3 +1,4 @@
+import { connectToDB } from "@/lib/database/mongoose";
 import React from "react";
 
 const Home = () => {
