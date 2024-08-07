@@ -38,6 +38,7 @@ import { updateCredits } from "@/lib/actions/user.actions";
 // import { getCldImageUrl } from "next-cloudinary";
 // import { addImage, updateImage } from "@/lib/actions/image.actions";
 import { useRouter } from "next/navigation";
+import MediaUploader from "./MediaUploader";
 // import { InsufficientCreditsModal } from "./InsufficientCreditsModal";
 
 export const formSchema = z.object({
@@ -297,7 +298,7 @@ const TransformationForm = ({
           </div>
         )}
 
-        {/* <div className="media-uploader-field">
+        <div className="media-uploader-field">
           <CustomField
             control={form.control}
             name="publicId"
@@ -313,6 +314,7 @@ const TransformationForm = ({
             )}
           />
 
+          {/* 
           <TransformedImage
             image={image}
             type={type}
@@ -321,7 +323,8 @@ const TransformationForm = ({
             setIsTransforming={setIsTransforming}
             transformationConfig={transformationConfig}
           />
-        </div> */}
+          */}
+        </div>
 
         <div className="flex flex-col gap-4">
           <Button
